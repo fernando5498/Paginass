@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+header {}
+
+nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    background: transparent;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    position: relative;
+    right: -100px;
+}
+
+.logo>h2 {
+    color: white;
+    letter-spacing: 10px;
+}
+
+.logo :nth-child(2) {
+    color: #fd675e;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    /* border: 2px solid black; */
+    justify-content: center;
+    ;
+}
+
+.menu>a {
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    height: 20px;
+    padding: 0px 5px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+.menu>a:hover {
+    background: #fd675e;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+.sliders {
+    position: absolute;
+    width: 100%;
+    height: 895px;
+}
+
+.image-slider1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image-slider2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image-slider3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: estrellas 10s infinite;
+}
+
+.image-slider4 {
+    width: 840px;
+    height: 700px;
+    position: absolute;
+    top: -95px;
+    right: 145px;
+}
+
+.image-slider5 {
+    width: 680px;
+    height: 680px;
+    right: 85px;
+    bottom: 120px;
+    position: absolute;
+}
+
+.image-slider6 {
+    width: 780px;
+    height: 450px;
+    right: 35px;
+    top: 210px;
+    position: absolute;
+    animation: nubes 4s infinite linear;
+}
+
+@keyframes nubes {
+    0% {
+        right: 35px;
+    }
+    40% {
+        right: 45px;
+    }
+    80% {
+        right: 25px;
+    }
+    100% {
+        right: 35px;
+    }
+}
+
+@keyframes estrellas {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* /////////////////////////Presentacion */
+
+.presentacion {
+    height: 550px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 200px;
+}
+
+.textos {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 100%;
+}
+
+.titulo {
+    width: 400px;
+    font-size: 45px;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.titulo :nth-child(2) {
+    color: #fd675e;
+}
+
+.linea {
+    width: 80px;
+    height: 2px;
+    background: white;
+    border-radius: 100px;
+}
+
+.contenido {
+    text-align: left;
+    color: white;
+}
+
+.boton {
+    background: white;
+    width: 140px;
+    text-align: center;
+    height: 25px;
+    padding: 4px 0px;
+    border-radius: 30px;
+    color: #fd675e;
+    text-decoration: none;
+    /* box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, .5); */
+}
+
+.boton:hover {
+    color: white;
+    background: #fd675e;
+}
+
+
+/* TEXTO DEL PLANETA */
+
+.texto {
+    position: absolute;
+    font-size: 50px;
+    width: 400px;
+    height: 180px;
+    top: 180px;
+    right: 230px;
+    text-align: center;
+    /* border: 3px solid red; */
+    color: white;
+}
+
+.texto h1 {
+    font-size: 90px;
+    color: #4f194a;
+}
+
+.texto h4 {
+    position: relative;
+    left: 0px;
+    font-size: 30px;
+    text-align: center;
+}
